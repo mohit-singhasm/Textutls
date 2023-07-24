@@ -1,0 +1,26 @@
+.circle {
+    border-radius: 50%;
+    margin: 6px;
+    padding: 10px;
+    border: none;
+}
+
+.blue{
+    background-color: #003e98;
+}
+
+.green{
+    background-color: #045004;
+}
+
+.red{
+    background-color: #760c0c;
+}
+
+.grey{
+    background-color: grey;
+}
+
+.form-check{
+    margin-left: 10px;
+}
