@@ -1,11 +1,14 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import About from './components/About';
 import Alert from './Alert';
 import {
+  createBrowserRouter,
+  RouterProvider,
   Route,
+  Link,
   BrowserRouter,
   Routes,
 } from "react-router-dom";
@@ -84,7 +87,7 @@ function App() {
       {/* <TextForm heading = "Enter your text to analyze" mode={mode} showAlter={showAlter} btnclr={btnclr}/>  */}
       {/* <About/> */}
       <Routes>
-        <Route exact path='/*' element={<TextForm heading = "Enter your text to analyze" mode={mode} showAlter={showAlter} btnclr={btnclr}/>} />
+        <Route exact path='/' element={<TextForm heading = "Enter your text to analyze" mode={mode} showAlter={showAlter} btnclr={btnclr}/>} />
         <Route exact path='/about' element={<About/>} />
       </Routes>
     </BrowserRouter>
